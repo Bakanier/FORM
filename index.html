@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container" id="registration-container">
+        <h1>Регистрация</h1>
+        <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+        <br>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" >
+
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" >
+
+        <label for="psw-repeat"><b>Повторите Пароль</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat">
+        <hr>
+
+        <p>By creating an account you agree to our  <a href="#"> Terms & Privacy</a>.</p>
+        <button type="submit" class="registerbtn" onclick="register()">Register</button>
+
+    </div>
+    <div class="container signin" id="login-container" style="display:none;">
+        <h1>Вход</h1>
+        <p>Введите данные для входа в учетную запись.</p>
+        <br>
+        <label for="login-email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="login-email" id="login-email">
+
+        <label for="login-psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Enter Password" name="login-psw" id="login-psw">
+        <hr>
+        <button type="button" class="loginbtn" onclick="loginUser()">Войти</button>
+    </div>
+
+    <div class="container signin" id="signin-container">
+        <p class="login-a"> Already have an account? <a href="#" onclick="showLoginForm()"> Sign in</a></p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
+
+
